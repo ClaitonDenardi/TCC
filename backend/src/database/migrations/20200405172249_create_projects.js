@@ -5,7 +5,7 @@ exports.up = function(knex) {
 
         table.string('title').notNullable();
         table.string('description').notNullable();
-        table.string('holder').notNullable();
+        table.string('holder');
 
         table.string('professor_id').notNullable();
         table.foreign('professor_id').references('id').inTable('professors');
